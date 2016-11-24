@@ -1,0 +1,140 @@
+{% macro generate_data(method_no, positions, top_branch) %}
+	{% set positions = positions %}
+	{% if method_no == 1 %}
+		{{render_tree(positions, top_branch)}}
+	{% elif method_no == 2 %}
+		{{generate_options(positions)}}
+	{% endif %}
+{% endmacro %}
+
+{% macro generate_options(positions) %}
+	<option value = "-1">None Selected</option>
+
+	{% for position in positions %}
+		<option value = "{{position.page_name}}">{{position.designation}}, {{position.department}}</option>
+	{% endfor %}
+{% endmacro %}
+
+{% macro render_tree(positions, top_branch) %}
+	{% set report_to = False %}
+	{% set index = 0 %}
+	{% set current_level = 2 %}
+
+	{% for position in positions %}
+		{% if top_branch == True %}
+			{% set top_branch = False %}
+			{{generate_branch(position)}}  
+
+		{% elif report_to == position.report_to %}
+			{{generate_branch(position)}}
+			{% set current_level = current_level + 1 %}
+
+		{% else %}
+			{% set position_level = position.level %}
+			{% set difference = current_level - position_level %} 
+			{% set count = 0 %}
+
+			{% for _ in range(0, index + 3) %}
+				{% if difference == 1 %}
+					{{close_position()}} 
+					{% set current_level = current_level - 1 %} 
+
+				{% elif difference > 1 %}
+					{{close_position()}} 
+					{{close_branch()}} 
+					{% set current_level = current_level - 1 %} 
+					{% set count = count + 1 %} 
+
+					
+
+				{% endif %}
+				{% set difference = current_level - position_level %} 
+			{% endfor %}
+
+			
+
+			{{generate_position(position)}} 
+			{% set current_level = position.level + 1 %}
+
+		{% endif %}
+
+		{% set report_to = position.page_name %}
+		{% set index = index + 1 %}
+	{% endfor %}
+{% endmacro %}
+
+
+{% macro generate_branch(position) %}
+<ul> {{generate_position(position)}}
+{% endmacro %}
+
+{% macro generate_position(position) %}
+<li><span class="Collapsable"><a id = "{{position.list_num}}" value = "{{position.page_name}},{{position.company}}, {{position.department}}, {{position.designation}}, {{position.job_description}}, {{position.position_band}}, {{position.report_to}},{{position.others_website}}" onmouseover="mouseOver(this.id, this.value)"><b> {{position.designation}} </b><br> {{position.department}} <br> {{position.company}}</a></span> 
+{% endmacro %}
+
+{% macro close_position() %}
+</li>
+{% endmacro %}
+
+{% macro close_branch() %}
+</ul>
+{% endmacro %}
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<div class="container1">
+<div style = " height: 35px; width: 75%;">
+	<div style = "width = 100%"><center><b><h1>Company Level Organization Chart</h1></b></center></div>
+	<div style=" float: right; padding-right: 2%; padding-bottom: 1%;">
+		<form class="form-inline" role="form">
+		  <div class="form-group-sm">
+		    <label for="text">Name: </label>
+		    <input type="text" class="form-control" id="search_name" placeholder="Enter Name">
+		    &emsp; 
+		    <label for="text">Position: </label>
+		    <select class="form-control" id="search_position">
+		      {{ generate_data(2, all, None) }}
+		    </select>
+		    <div class="btn btn-default" onclick="searching()">Search</div>
+		  </div>
+		</form>
+	</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-9">
+  	<div class="tree" id = "tree_root" style="padding-left:5%; padding-top: 2%; padding-bottom: 4%; background: #F5EEC9;">
+  	<div id = "tree"><center>{{ generate_data(1, all, True) }}</center></div>
+  	</div>
+  </div>
+
+  <div class="col-sm-3" style="border-left: 1px solid; background-color:white; min-height: 450px;">
+  <div id = "padding"></div>
+  	<div id = "position_information">
+  	<div id = "position_data">
+  		<h3>Position Information</h3>
+  	</div>
+  	</div>
+
+  	<div id = "employee_information">
+  		<h3>Employee Information</h3>
+  		<div id = "employee_data">
+  		</div>
+  	</div>
+  	
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    $(".Collapsable").click(function () {
+
+        $(this).parent().children().toggle();
+        $(this).toggle();
+
+    });
+
+</script>

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include organizational_management *.css
+recursive-include organizational_management *.csv
+recursive-include organizational_management *.html
+recursive-include organizational_management *.ico
+recursive-include organizational_management *.js
+recursive-include organizational_management *.json
+recursive-include organizational_management *.md
+recursive-include organizational_management *.png
+recursive-include organizational_management *.py
+recursive-include organizational_management *.svg
+recursive-include organizational_management *.txt
+recursive-exclude organizational_management *.pyc
