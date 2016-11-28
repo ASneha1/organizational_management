@@ -1,0 +1,130 @@
+[
+ {
+  "description": null, 
+  "designation_name": "CEO", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.282145", 
+  "name": "CEO"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Manager", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.290946", 
+  "name": "Manager"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Analyst", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.302147", 
+  "name": "Analyst"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Engineer", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.307431", 
+  "name": "Engineer"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Accountant", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.312532", 
+  "name": "Accountant"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Secretary", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.317647", 
+  "name": "Secretary"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Associate", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.322831", 
+  "name": "Associate"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Administrative Officer", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.328143", 
+  "name": "Administrative Officer"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Business Development Manager", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.333421", 
+  "name": "Business Development Manager"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "HR Manager", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.338820", 
+  "name": "HR Manager"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Project Manager", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.343964", 
+  "name": "Project Manager"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Head of Marketing and Sales", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.349101", 
+  "name": "Head of Marketing and Sales"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Software Developer", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.354499", 
+  "name": "Software Developer"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Designer", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.359679", 
+  "name": "Designer"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Researcher", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 13:47:22.364921", 
+  "name": "Researcher"
+ }, 
+ {
+  "description": null, 
+  "designation_name": "Director", 
+  "docstatus": 0, 
+  "doctype": "Designation", 
+  "modified": "2016-11-23 18:39:19.775264", 
+  "name": "Director"
+ }
+]

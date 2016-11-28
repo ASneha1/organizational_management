@@ -1,0 +1,114 @@
+[
+ {
+  "department_name": "Accounts", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.227639", 
+  "name": "Accounts"
+ }, 
+ {
+  "department_name": "Marketing", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.233037", 
+  "name": "Marketing"
+ }, 
+ {
+  "department_name": "Sales", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.235498", 
+  "name": "Sales"
+ }, 
+ {
+  "department_name": "Purchase", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.237854", 
+  "name": "Purchase"
+ }, 
+ {
+  "department_name": "Operations", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.240143", 
+  "name": "Operations"
+ }, 
+ {
+  "department_name": "Production", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.242426", 
+  "name": "Production"
+ }, 
+ {
+  "department_name": "Dispatch", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.244681", 
+  "name": "Dispatch"
+ }, 
+ {
+  "department_name": "Customer Service", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.246984", 
+  "name": "Customer Service"
+ }, 
+ {
+  "department_name": "Human Resources", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.249141", 
+  "name": "Human Resources"
+ }, 
+ {
+  "department_name": "Management", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.251479", 
+  "name": "Management"
+ }, 
+ {
+  "department_name": "Quality Management", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.253748", 
+  "name": "Quality Management"
+ }, 
+ {
+  "department_name": "Research & Development", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.256057", 
+  "name": "Research & Development"
+ }, 
+ {
+  "department_name": "Legal", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 13:47:22.258227", 
+  "name": "Legal"
+ }, 
+ {
+  "department_name": "Group Leadership", 
+  "docstatus": 0, 
+  "doctype": "Department", 
+  "leave_block_list": null, 
+  "modified": "2016-11-23 18:39:27.526031", 
+  "name": "Group Leadership"
+ }
+]

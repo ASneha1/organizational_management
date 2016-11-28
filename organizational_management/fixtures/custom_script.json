@@ -1,0 +1,38 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Expense Claim", 
+  "modified": "2016-09-06 13:26:39.184440", 
+  "name": "Expense Claim-Client", 
+  "script": "frappe.ui.form.on(\"Expense Claim\", \"onload\", function(frm) {\nif(frm.doc.__islocal == 1) { //doc has never been saved before\nfrappe.call({\n        \"method\": \"frappe.client.get_value\",\n        \"args\": {\n            \"doctype\": \"Employee\",\n            \"fieldname\": \"position\",\n            \"filters\": {\n                \"user_id\":  frappe.session.user\n            }\n        },\n        callback: function(r){\n             console.log(r.message.position);\n             cur_frm.set_value(\"created_by_position\", r.message.position);\n       }\n    })\n}\n});", 
+  "script_type": "Client"
+ }, 
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Purchase Order", 
+  "modified": "2016-09-06 13:15:49.970548", 
+  "name": "Purchase Order-Client", 
+  "script": "frappe.ui.form.on(\"Purchase Order\", \"onload\", function(frm) {\nif(frm.doc.__islocal == 1) { //doc has never been saved before\nfrappe.call({\n        \"method\": \"frappe.client.get_value\",\n        \"args\": {\n            \"doctype\": \"Employee\",\n            \"fieldname\": \"position\",\n            \"filters\": {\n                \"user_id\":  frappe.session.user\n            }\n        },\n        callback: function(r){\n             console.log(r.message.position);\n             cur_frm.set_value(\"created_by_position\", r.message.position);\n       }\n    })\n}\n});", 
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Leave Application", 
+  "modified": "2016-09-06 13:15:49.970548", 
+  "name": "Leave Application-Client", 
+  "script": "frappe.ui.form.on(\"Leave Application\", \"onload\", function(frm) {\nif(frm.doc.__islocal == 1) { //doc has never been saved before\nfrappe.call({\n        \"method\": \"frappe.client.get_value\",\n        \"args\": {\n            \"doctype\": \"Employee\",\n            \"fieldname\": \"position\",\n            \"filters\": {\n                \"user_id\":  frappe.session.user\n            }\n        },\n        callback: function(r){\n             console.log(r.message.position);\n             cur_frm.set_value(\"created_by_position\", r.message.position);\n       }\n    })\n}\n});", 
+  "script_type": "Client"
+ },
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Employee", 
+  "modified": "2016-11-28 13:13:55.966729", 
+  "name": "Employee-Client", 
+  "script": "frappe.ui.form.on(\"Employee\", \"refresh\", function(frm) {\n    cur_frm.set_query(\"position\", function() {\n        return {\n            filters: [\n                ['Position','page_name','!=','board of director']\n\n            ]\n        };\n    });\n});\n\nfrappe.ui.form.on(\"Employee\", \"validate\", function(frm) {\n    if (frm.doc.position) {\n        temp = frm.doc.position;\n        temp = temp.replace(',','');\n        temp = temp.toLowerCase();\n        cur_frm.set_value(\"employee_position\", temp);\n    }\n    else {\n        cur_frm.set_value(\"employee_position\", frm.doc.position);\n    }\n});", 
+  "script_type": "Client"
+ }
+]

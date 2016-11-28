@@ -26,15 +26,13 @@ doc_events = {
 		"validate": "organizational_management.organizational_management.doctype.leave_application_approval_workflow.leave_application_approval_workflow.populate_approval_workflow",
 		"before_save": "organizational_management.organizational_management.doctype.leave_application_approval_workflow.leave_application_approval_workflow.populate_to_notify_next",
 		"before_submit": "organizational_management.organizational_management.doctype.leave_application_approval_workflow.leave_application_approval_workflow.populate_to_notify_next"
-	},
-	"Material Request": {
-		"validate": "organizational_management.organizational_management.doctype.material_request_approval_workflow.material_request_approval_workflow.populate_approval_workflow",
-		"before_save": "organizational_management.organizational_management.doctype.material_request_approval_workflow.material_request_approval_workflow.populate_to_notify_next",
-		"before_submit": "organizational_management.organizational_management.doctype.material_request_approval_workflow.material_request_approval_workflow.populate_to_notify_next"
 	}
 }
 
 notification_config = "organizational_management.notifications.get_notification_config"
+
+fixtures = ["Custom Field", "Custom Script", "Workflow State", "Workflow Action", "Workflow", "Company", "Department", "Designation", "Position"]
+
 
 # Includes in <head>
 # ------------------
