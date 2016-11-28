@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## organizational_management
 
 Capture the organizational hierarchy in companies and have a view on the Delegation of Authorities when transactions are being performed
@@ -31,12 +30,12 @@ Organizational chart is a diagram that graphically represents the structure of a
 2.	Select the position of the employee at the "Position" field.
 3.	Each position can only be assigned to one employee.
 
-## How to view the Organization chart?
+## How to view the Organizational chart?
 
 1.	Navigate to Organizational Management > Position.
 2.  Select any position and click on "Navigate to Org Chart" button at the top right. 
 
-## Features of the Organization chart:
+## Features of the Organizational chart:
 1.	Home Button
 -	Allow user to return to the full chart.
 2.	Search Function
